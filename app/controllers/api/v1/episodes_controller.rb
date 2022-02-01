@@ -1,9 +1,9 @@
 class Api::V1::EpisodesController < ApplicationController
   def index
-    season_id = params[:season_id].to_i
+    season_id = params[:id]
     season = Season.find(season_id)
     @episodes = season.episodes.order(:id)
-    render json: { status: "SUCCESS", data: @episode }
+    render json: { status: "SUCCESS", data: @episodes }
   end
   
   def show
