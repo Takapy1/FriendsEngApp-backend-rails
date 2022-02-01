@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   namespace :api do
     namespace :v1 do
-      get '/seasons/:id/episodes' => 'episodes#index'
+      get '/seasons/:season_id/episodes' => 'episodes#index'
+      get '/seasons/:season_id/episodes/:id' => 'episodes#show'
     end
   end
 end
