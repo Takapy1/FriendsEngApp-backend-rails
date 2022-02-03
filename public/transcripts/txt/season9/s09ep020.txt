@@ -1,7 +1,4 @@
-Teleplay: Andrew Reich & Ted Cohen
- Story: Shana Goldberg-Meehan
- Directed by: Sheldon Epps
- Transcribed by: Eleonora, Pheeboh, Sebastiano & Vanessa
+Teleplay: Andrew Reich & Ted Cohen  Story: Shana Goldberg-Meehan  Directed by: Sheldon Epps  Transcribed by: Eleonora, Pheeboh, Sebastiano & Vanessa 
 [Scene: Monica's apartment]
 Joey: (enters the room) Hey, you guys, what are you doing tomorrow night?
 Chandler: (browsing through a diary) Well, let me see... I-I believe I'm... yes, falling asleep in front of the TV.
@@ -296,8 +293,7 @@ Monica: So I got it when I was 13...
 [Scene: At the counter. Ross is sitting there, drinking. Phoebe approaches him.]
 Phoebe: Hey Ross! So listen, about you and the dinosaur girl, are you really just gonna let a couple of Nobel prizes scare you off? What is that, come on, a piece of paper?
 Ross: It's actually a 1,000,000$ prize.
-Phoebe: Go Charlie! But my point is, ok so she dated them but she also broke up with them. Maybe she's looking to, you know, 
-slum it with some average Joe Phd.
+Phoebe: Go Charlie! But my point is, ok so she dated them but she also broke up with them. Maybe she's looking to, you know,  slum it with some average Joe Phd.
 Ross: Yeah, maybe. I do have my whole career in front of me. I mean, I can still win a Nobel prize. Although the last two papers I've written were widely discredited.
 Phoebe: You're so much more than just brains! You're sweet, and kind, and funny...
 Ross: And sexy.

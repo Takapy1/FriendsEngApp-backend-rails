@@ -2,7 +2,7 @@ namespace :html_file do
   desc "HTML fileのdialogueの部分をテキストファイルに変換する"
   task change_to_txt: :environment do
     full_path = Rails.root.to_s + "/public/transcripts"
-    (1..1).each do |season|
+    (1..10).each do |season|
       html_file_names = Dir.open(full_path + "/html/season#{season}").children
       html_file_names.each_with_index do |html_file_name, j|
         file = File.open(full_path + "/html/season#{season}/" + html_file_name, "r")
