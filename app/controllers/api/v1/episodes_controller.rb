@@ -3,7 +3,7 @@ class Api::V1::EpisodesController < ApplicationController
     season_id = params[:season_id]
     season = Season.find(season_id)
     @episodes = season.episodes.order(:id)
-    render json: { status: "SUCCESS", data: @episodes }
+    render json: @episodes
   end
   
   def show
@@ -11,7 +11,7 @@ class Api::V1::EpisodesController < ApplicationController
     season_id = params[:season_id].to_i
     episodes = Season.find(season_id).episodes
     @episode = episodes.find(params[:id].to_i + Constants::CUL_SUM_NUM_EPISODES_LIST[season_id - 1])
-    render json: { status: "SUCCESS", data: @episode.lines }
+    render json: @episode.lines
     # @dialogues = @episode.dialogues
     # @phrases_json = get_phrases_json(@dialogues)
   end
