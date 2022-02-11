@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_31_011256) do
+ActiveRecord::Schema.define(version: 2022_02_11_051513) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,17 @@ ActiveRecord::Schema.define(version: 2022_01_31_011256) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "words", force: :cascade do |t|
+    t.integer "line_id", null: false
+    t.integer "index_of_line", null: false
+    t.string "content", null: false
+    t.text "meaning", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["line_id", "index_of_line"], name: "index_words_on_line_id_and_index_of_line", unique: true
+  end
+
   add_foreign_key "episodes", "seasons"
   add_foreign_key "lines", "episodes"
+  add_foreign_key "words", "lines"
 end
