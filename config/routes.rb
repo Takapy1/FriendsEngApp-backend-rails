@@ -8,6 +8,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       get '/seasons/:season_id/episodes' => 'episodes#index'
       get '/seasons/:season_id/episodes/:id' => 'episodes#show'
+      get '/lines/:line_id/words/:index' => 'words#show'
+      
+      post '/words' => 'words#create'
     end
   end
 end
